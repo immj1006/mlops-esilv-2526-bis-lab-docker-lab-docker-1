@@ -1,0 +1,1 @@
+docker run -d -p 8080:80 -e WS_BACK_URL=http://10.1.171.63:5000 --name my-front-container immj1006/my-front:latest 
