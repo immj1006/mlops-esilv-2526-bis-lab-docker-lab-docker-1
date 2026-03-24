@@ -1,0 +1,4 @@
+version: '3'
+services:
+  back:
+    image: immj1006/my-back:latest
