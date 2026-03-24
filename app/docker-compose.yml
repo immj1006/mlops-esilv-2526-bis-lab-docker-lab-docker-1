@@ -2,3 +2,14 @@ version: '3'
 services:
   back:
     image: immj1006/my-back:latest
+    ports:
+      - "5000:5000"
+    environment:
+      - CURRENT_ENVIRONMENT=production
+  front:
+    image: immj1006/my-front:latest
+    ports:
+      - "8080:80"
+    environment:
+      - TR_WS_BACK_URL=http://localhost:5000
+      - WS_BACK_URL=http://localhost:5000
